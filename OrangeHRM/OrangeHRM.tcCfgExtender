@@ -25,7 +25,7 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{72EC33BF-3CA9-4330-B19E-C14610E755A4}"/>
+				<Prp name="activity" type="S" value="{90E43FDA-D93B-4761-8135-BD6F50520367}"/>
 			</Node>
 			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}"/>
 			<Node name="{415b5aa1-c6ac-4d4d-9a53-063a521a45ab}">
@@ -731,27 +731,13 @@
 				<Node name="orangehrm">
 					<Node name="orangehrm">
 						<Node name="advanced">
-							<Node name="script">
-								<Node name="handler">
-									<Node name="webelementhandler"/>
-								</Node>
-								<Node name="webpageentries">
-									<Node name="login"/>
-								</Node>
-								<Node name="webpagesteps">
-									<Node name="admin">
-										<Node name="user management">
-											<Node name="users"/>
-										</Node>
-									</Node>
-								</Node>
-							</Node>
+							<Node name="script"/>
 						</Node>
+						<Node name="keywordtests"/>
+						<Node name="stores"/>
 					</Node>
 				</Node>
-				<Node name="orangehrm logs">
-					<Node name="orangehrm logs"/>
-				</Node>
+				<Node name="orangehrm logs"/>
 			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{8EBE6EB3-803D-4913-AD7A-D71552123A67}"/>
