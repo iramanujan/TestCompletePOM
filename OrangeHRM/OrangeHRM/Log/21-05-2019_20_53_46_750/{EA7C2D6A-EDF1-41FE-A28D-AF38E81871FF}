@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row4">
+				<Prp name="name" type="S" value="ValidateSortingForUsername [Script\UserTest - ValidateSortingForUsername]"/>
+				<Prp name="start time" type="D" value="43606.8718375231"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="43606.8721449306"/>
+				<Prp name="details" type="S" value="{F1D23430-E1DD-4F35-A0AF-A423D58C991F}"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="name" type="S" value="ValidateSortingForStatus [Script\UserTest - ValidateSortingForStatus]"/>
+				<Prp name="start time" type="D" value="43606.8709273148"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="43606.8712227315"/>
+				<Prp name="details" type="S" value="{0BFF5E0C-88C4-4267-99A0-E3E827578B9A}"/>
+			</Node>
+			<Node name="row3">
+				<Prp name="name" type="S" value="ValidateSortingForEmployeeName [Script\UserTest - ValidateSortingForEmployeeName]"/>
+				<Prp name="start time" type="D" value="43606.8715220139"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="43606.8718374537"/>
+				<Prp name="details" type="S" value="{80D90FAA-0A7D-44E7-9129-A238C265FED0}"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="name" type="S" value="ValidateSystemUserPage [Script\UserTest - ValidateSystemUserPage]"/>
+				<Prp name="start time" type="D" value="43606.8706871528"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="43606.8709272222"/>
+				<Prp name="details" type="S" value="{704C48BE-143B-46CD-B5DD-2E53E325779B}"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="name" type="S" value="ValidateSortingForUserRole [Script\UserTest - ValidateSortingForUserRole]"/>
+				<Prp name="start time" type="D" value="43606.8712228241"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="43606.8715218981"/>
+				<Prp name="details" type="S" value="{B5C278DF-A5DC-4188-B1D8-B9BAABAC135E}"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

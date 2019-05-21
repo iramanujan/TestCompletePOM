@@ -1,0 +1,17 @@
+﻿ObjPage = Sys.Browser("iexplore").Page("https://opensource-demo.orangehrmlive.com/");
+  
+def FindElementByXpath(self,value):
+  webElement = ObjPage.EvaluateXPath(value)[0];
+  return webElement
+    
+def FindElementByQuerySelector(self,value):
+  webElement = ObjPage.QuerySelector(value);
+  return webElement
+  
+def FindElementsByXpath(self,value):
+  webElements = ObjPage.EvaluateXPath(value);
+  return webElements
+    
+def FindElementsByQuerySelector(self,value):
+  webElements = ObjPage.QuerySelectorAll(value);
+  return webElements

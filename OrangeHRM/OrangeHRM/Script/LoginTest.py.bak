@@ -1,0 +1,13 @@
+﻿import LoginSteps;
+
+def VerifyLogin(strUserName,strPassword):
+  LoginSteps.LoginWithValidInput(strUserName,strPassword);
+  
+def VeriftEmptyUserNameErrorMsg(strPassword):
+  LoginSteps.LoginWithEmptyUserName(strPassword)
+    
+def VeriftEmptyPasswordErrorMsg(strUserName):
+  LoginSteps.LoginWithEmptyPassword(strUserName)
+    
+def VeriftInvalidCredentialsErrorMsg(strUserName,strPassword):
+  LoginSteps.LoginWithInvalidCredentials(strUserName,strPassword)

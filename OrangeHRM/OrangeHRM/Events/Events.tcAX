@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}" version="1400" key="{2EEC79BB-B21B-4635-880E-4F2D39AAE272}" typeId="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}">
+	<config nodeName="Events" tlbHistory="&quot;TestComplete general events&quot;" />
+	<testData />
+	<data />
+	<children>
+		<child key="{C906D799-C4AE-40B1-A06C-C6EBD85A4CA2}">
+			<config nodeName="EventControl2" lastOpenedTLB="" generatedCLSID="{5DEC0DC5-1099-4D65-8A41-DEE6F6685F25}" generatedTLBKey="{C88CC72F-B864-4761-9C0D-834A907EEB43}" generatedEventsKey="{C46B3B07-3411-4CC9-B1E5-AFE45D1E7CA8}" generatedTLBDesc="TestComplete EventControl2 Control - 15-05-2019 13:01:39">
+				<eventInfo infoTLBVer="version.dll" infoGUID="{F5856842-4323-49FD-B806-36E22179EF8A}" infoID="1610743809" infoControlName="Test Engine Events" infoEventName="OnStopTest" infoEventRealName="OnStopTest" infoDescription="Occurs when TestComplete stops running a test or when the execution of a test item is over." />
+				<handlerInfo handlerName="EventControl2_OnStopTest" handlerMoniker="{ED2AFBD2-DE1C-4773-A53D-EAF87BA8E55B}EventControl2_OnStopTest" handlerEventName="OnStopTest" handlerRealIID="{F5856842-4323-49FD-B806-36E22179EF8A}" handlerRealDispID="1610743809" />
+			</config>
+			<testData />
+			<data />
+		</child>
+		<child key="{AD8216F5-1DD3-4A2E-8470-434308E1B044}">
+			<config nodeName="EventControl1" lastOpenedTLB="" generatedCLSID="{AE857DCF-0751-400A-8A1E-4F2ED99B8849}" generatedTLBKey="{11670C96-63A7-4585-B1FE-24DA31F805E5}" generatedEventsKey="{40227302-D89D-4250-AD90-5CDAE48E80DB}" generatedTLBDesc="TestComplete EventControl1 Control - 15-05-2019 13:01:16">
+				<eventInfo infoTLBVer="version.dll" infoGUID="{F5856842-4323-49FD-B806-36E22179EF8A}" infoID="1610743808" infoControlName="Test Engine Events" infoEventName="OnStartTest" infoEventRealName="OnStartTest" infoDescription="Occurs when TestComplete starts running a test (whether it is run from the UI or command line, or as a project test item)." />
+				<handlerInfo handlerName="EventControl1_OnStartTest" handlerMoniker="{ED2AFBD2-DE1C-4773-A53D-EAF87BA8E55B}EventControl1_OnStartTest" handlerEventName="OnStartTest" handlerRealIID="{F5856842-4323-49FD-B806-36E22179EF8A}" handlerRealDispID="1610743808" />
+			</config>
+			<testData />
+			<data />
+		</child>
+	</children>
+</Root>

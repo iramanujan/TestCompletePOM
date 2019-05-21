@@ -1,0 +1,46 @@
+﻿import BrowserFactry
+import DateTime
+import Waiter
+
+def GetWebElement(FindBy, Value, All=False):
+  WebElement = None;  
+  WebElement = FindElement(FindBy,Value,All);
+  return WebElement if(WebElement is not None)else Waiter.Synchronization(WebElement);
+
+def FindElement(FindBy, Value, All=False):
+  WebElement = None;
+  if(FindBy == "cssSelector" and All == True):
+    WebElement =FindElementsByQuerySelector(Value)
+  elif(FindBy == "xpath" and All == True):
+    WebElement =FindElementsByXpath(Value)
+  elif(FindBy == "cssSelector" and All == False):
+    WebElement =FindElementByQuerySelector(Value)
+  elif(FindBy == "xpath" and All == False):
+    WebElement =FindElementByXpath(Value);
+  else:
+    WebElement = None;
+  return WebElement;
+    
+    
+def FindElementByXpath(value):
+  webElement = BrowserFactry.GetPageObject().EvaluateXPath(value)[0];
+  return webElement
+    
+def FindElementByQuerySelector(value):
+  webElement = BrowserFactry.GetPageObject().QuerySelector(value);
+  return webElement
+  
+def FindElementsByXpath(value):
+  webElements = BrowserFactry.GetPageObject().EvaluateXPath(value);
+  return webElements
+    
+def FindElementsByQuerySelector(value):
+  webElements = BrowserFactry.GetPageObject().QuerySelectorAll(value);
+  return webElements
+  
+def IsVisible(WebElement):
+  if(WebElement is None):return False;
+  else:
+  	Height = WebElement.offsetHeight
+  	Width  = WebElement.offsetHeight
+  return True if(Height > 0 or Width > 0)else False; 

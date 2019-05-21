@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="14.0" key="{E6154AD1-2CD5-4762-AD80-072E84457F7A}">
+	<children>
+		<child name="OrangeHRM" key="{90E43FDA-D93B-4761-8135-BD6F50520367}" path="OrangeHRM\OrangeHRM.mds" />
+	</children>
+	<testItems key="{306889BA-889A-4A12-8F12-686AB7A9989E}">
+		<children>
+			<testItem key="{90E43FDA-D93B-4761-8135-BD6F50520367}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{62A004C6-3285-4C2D-8BDE-AEFE6DD965E8}">
+		<data Version="3" />
+	</variables>
+	<analysis key="{03C6E7FD-42D7-4C2F-A5DF-17145DAA8ADB}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}">
+		<CrossBrowserTesting Enable="True" />
+	</extender>
+</Root>

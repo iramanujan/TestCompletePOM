@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="logs">
+				<Prp name="key" type="S" value="{3DB944C9-FB65-4055-A4C4-32E6A50ACC41}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables">
+				<Node name="datav3">
+					<Node name="var0">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="6300680072006F006D006500"/>
+						</Node>
+						<Prp name="name" type="S" value="Chrome"/>
+					</Node>
+					<Node name="var1">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="680074007400700073003A002F002F006F00700065006E0073006F0075007200630065002D00640065006D006F002E006F00720061006E0067006500680072006D006C006900760065002E0063006F006D002F00"/>
+						</Node>
+						<Prp name="name" type="S" value="ApplicationURL"/>
+					</Node>
+					<Node name="var10">
+						<Node name="value">
+							<Prp name="intvalue" type="I" value="3"/>
+						</Node>
+						<Prp name="name" type="S" value="PollingEveryInSec"/>
+					</Node>
+					<Node name="var2">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="2A006F00720061006E0067006500680072006D006C006900760065002E0063006F006D002A00"/>
+						</Node>
+						<Prp name="name" type="S" value="PageURL"/>
+					</Node>
+					<Node name="var3">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="410064006D0069006E00"/>
+						</Node>
+						<Prp name="name" type="S" value="UserName"/>
+					</Node>
+					<Node name="var4">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="610064006D0069006E00310032003300"/>
+						</Node>
+						<Prp name="name" type="S" value="Password"/>
+					</Node>
+					<Node name="var5">
+						<Node name="value">
+							<Prp name="intvalue" type="I" value="2"/>
+						</Node>
+						<Prp name="name" type="S" value="PageLoadTimeOut"/>
+					</Node>
+					<Node name="var6">
+						<Node name="value">
+							<Prp name="intvalue" type="I" value="5"/>
+						</Node>
+						<Prp name="name" type="S" value="TimeOutInMin"/>
+					</Node>
+					<Node name="var7">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="6300680072006F006D006500"/>
+						</Node>
+						<Prp name="name" type="S" value="TestBrowser"/>
+					</Node>
+					<Node name="var8">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="51004100"/>
+						</Node>
+						<Prp name="name" type="S" value="Environment"/>
+					</Node>
+					<Node name="var9">
+						<Node name="value">
+							<Prp name="intvalue" type="I" value="0"/>
+						</Node>
+						<Prp name="name" type="S" value="TimeElapsed"/>
+					</Node>
+				</Node>
+				<Prp name="version" type="I" value="3"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{49FC0C30-9EF7-4DBD-97A8-B7A00E79A2AF}"/>
+	</Node>
+</Nodes>

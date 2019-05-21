@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="WebPageEntries">
+			<folder name="Login">
+				<child name="Login" key="{896AD765-4CC3-43E3-9E42-2DA90DAA6B07}" path="Login.py" />
+			</folder>
+			<folder name="Admin">
+				<folder name="User Management">
+					<folder name="Users">
+						<child name="Users" key="{D878F481-EC6A-4E30-B0C4-4984C04C44E8}" path="Users.py" />
+					</folder>
+				</folder>
+			</folder>
+		</folder>
+		<folder name="WebPageSteps">
+			<folder name="Login">
+				<child name="LoginSteps" key="{036C039F-E5BE-4497-8EA6-6C0B8E019A5D}" path="LoginSteps.py" />
+			</folder>
+			<folder name="Admin">
+				<folder name="User Management">
+					<folder name="Users">
+						<child name="UsersSteps" key="{6275C243-D43D-41FB-8029-DC9FBB32AD23}" path="UsersSteps.py" />
+					</folder>
+				</folder>
+			</folder>
+		</folder>
+		<folder name="TestHarness">
+			<folder name="Admin">
+				<folder name="User Management">
+					<folder name="Users">
+						<child name="UserTest" key="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}" path="UserTest.py" />
+					</folder>
+				</folder>
+			</folder>
+			<folder name="Login">
+				<child name="LoginTest" key="{2AD0B07C-8D54-4741-A084-6F5AB8EB8177}" path="LoginTest.py" />
+			</folder>
+		</folder>
+		<folder name="Handler">
+			<folder name="WebElementHandler">
+				<child name="WebElement" key="{6B16E407-F104-4EEA-B23F-42E96DC57DA7}" path="WebElement.py" />
+			</folder>
+			<folder name="Browser Handler">
+				<child name="BrowserFactry" key="{F07991D2-8D2A-4F39-B3E1-2B34B2103AD9}" path="BrowserFactry.py" />
+			</folder>
+			<folder name="Wait Handler">
+				<child name="Waiter" key="{C5A34B3A-3CB9-4495-BE2E-BDFFFD063174}" path="Waiter.py" />
+			</folder>
+		</folder>
+		<folder name="Helper">
+			<folder name="WebElementHelper">
+				<child name="WebElementHelper" key="{4A2D93D2-509F-4EE7-B37D-3841C006A557}" path="WebElementHelper.py" />
+			</folder>
+			<child name="Helper" key="{D1B658A1-F984-4B0D-8025-480E2060ECB5}" path="Helper.py" />
+			<child name="DateTime" key="{DB736336-6F52-4821-A182-409D47D5A15B}" path="DateTime.py" />
+		</folder>
+		<folder name="EventHandler">
+			<child name="EventHandler" key="{ED2AFBD2-DE1C-4773-A53D-EAF87BA8E55B}" path="EventHandler.py" />
+		</folder>
+		<child name="Unit1" key="{72EC33BF-3CA9-4330-B19E-C14610E755A4}" path="Unit1.py" />
+	</children>
+</Root>

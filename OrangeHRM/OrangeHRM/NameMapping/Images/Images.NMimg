@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Images>
+		<Child1 File="3210546.png" RefCount="1" Cookie="367506555" />
+		<Child2 File="5098328.png" RefCount="1" Cookie="1352681548" />
+		<Child3 File="3210859.png" RefCount="1" Cookie="-96603329" />
+		<Child4 File="3209359.png" RefCount="4" Cookie="-382538365" />
+		<Child5 File="5097312.png" RefCount="4" Cookie="598538282" />
+	</Images>
+</Root>

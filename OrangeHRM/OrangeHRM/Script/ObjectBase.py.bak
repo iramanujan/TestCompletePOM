@@ -1,0 +1,21 @@
+﻿class ObjectBase:
+  def __init__(self):
+    self.__ObjPage = Sys.Browser("*").Page("*");
+  
+  def FindElementByXpath(self,value):
+    webElement = self.__ObjPage.EvaluateXPath(value)[0];
+    return webElement
+    
+  def FindElementByQuerySelector(self,value):
+    webElement = self.__ObjPage.QuerySelector(value);
+    return webElement
+  
+  def FindElementsByXpath(self,value):
+    webElements = self.__ObjPage.EvaluateXPath(value);
+    return webElements
+    
+  def FindElementsByQuerySelector(self,value):
+    webElements = self.__ObjPage.QuerySelectorAll(value);
+    return webElements
+    
+  def FindElement
