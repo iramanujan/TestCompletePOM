@@ -20,17 +20,7 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="folders"/>
-		<Node name="logs">
-			<Node name="log idx=0000">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="43606.8825159028"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{32FD6933-8E8C-4973-935E-BE0D94FE8FA2}"/>
-				<Prp name="nameofroot" type="S" value="OrangeHRM"/>
-				<Prp name="relpath" type="S" value="21-05-2019_21_10_49_374\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-		</Node>
+		<Node name="logs"/>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

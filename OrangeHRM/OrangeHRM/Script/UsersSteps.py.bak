@@ -24,16 +24,14 @@ def VerifySorting(strColumnName):
   WebObjsSort = Users.Sort(columnIndex);
 
   WebObjsSort.Click();
-  Waiter.Wait(3)
+  Waiter.Wait(1)
   strAsc = WebObjsSort.getAttribute('class')
 
   strFirstRecord = Users.FirstRecord(columnIndex).textContent;
   strLastRecord = Users.LastRecord(columnIndex).textContent;
-  
-  
-  
+    
   WebObjsSort.Click();
-  Waiter.Wait(3)
+  Waiter.Wait(1)
   strDesc = WebObjsSort.getAttribute('class')
 
   strFirstRecord2 = Users.FirstRecord(columnIndex).textContent;

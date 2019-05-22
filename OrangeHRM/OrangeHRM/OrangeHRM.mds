@@ -12,25 +12,25 @@
 	<config language="{7D0FC31C-B0A7-4F4F-B5AF-1F16370169CB}" />
 	<testItems key="{30459A8F-103C-445B-A0B1-60DE21199205}" version="14">
 		<children>
-			<testItem name="OrangeHRM" key="{34C92F2A-58D4-4234-8789-443D3FCCB5F2}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="OrangeHRM" key="{34C92F2A-58D4-4234-8789-443D3FCCB5F2}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
-					<testItem name="Login" key="{CF037F23-673D-43A8-84FB-AEEC2196AB04}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="Login" key="{CF037F23-673D-43A8-84FB-AEEC2196AB04}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children>
-							<testItem name="Login" key="{AC07405B-896F-466C-BCE5-A15E6997D3F9}" group="False" enabled="True" testMoniker="{2AD0B07C-8D54-4741-A084-6F5AB8EB8177}VerifyLogin" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="Login" key="{AC07405B-896F-466C-BCE5-A15E6997D3F9}" group="False" enabled="False" testMoniker="{2AD0B07C-8D54-4741-A084-6F5AB8EB8177}VerifyLogin" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters />
 								<children />
 							</testItem>
-							<testItem name="ValidateEmptyUserNameErrorMsg" key="{90D11053-888D-40CC-B95F-1684294BFD28}" group="False" enabled="True" testMoniker="{2AD0B07C-8D54-4741-A084-6F5AB8EB8177}VeriftEmptyUserNameErrorMsg" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ValidateEmptyUserNameErrorMsg" key="{90D11053-888D-40CC-B95F-1684294BFD28}" group="False" enabled="False" testMoniker="{2AD0B07C-8D54-4741-A084-6F5AB8EB8177}VeriftEmptyUserNameErrorMsg" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters />
 								<children />
 							</testItem>
-							<testItem name="ValidateEmptyPasswordErrorMsg" key="{9206BF66-FC99-4C71-8299-4B3237C8D02E}" group="False" enabled="True" testMoniker="{2AD0B07C-8D54-4741-A084-6F5AB8EB8177}VeriftEmptyPasswordErrorMsg" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ValidateEmptyPasswordErrorMsg" key="{9206BF66-FC99-4C71-8299-4B3237C8D02E}" group="False" enabled="False" testMoniker="{2AD0B07C-8D54-4741-A084-6F5AB8EB8177}VeriftEmptyPasswordErrorMsg" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters />
 								<children />
 							</testItem>
-							<testItem name="ValidateInvalidCredentialsErrorMsg" key="{460274DD-5988-43DF-AE81-6875A0446E6E}" group="False" enabled="True" testMoniker="{2AD0B07C-8D54-4741-A084-6F5AB8EB8177}VeriftInvalidCredentialsErrorMsg" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ValidateInvalidCredentialsErrorMsg" key="{460274DD-5988-43DF-AE81-6875A0446E6E}" group="False" enabled="False" testMoniker="{2AD0B07C-8D54-4741-A084-6F5AB8EB8177}VeriftInvalidCredentialsErrorMsg" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
 									<param0 name="strUserName" type="3" localVarName="" varType="8" value="test" />
 									<param1 name="strPassword" type="3" localVarName="" varType="8" value="test" />

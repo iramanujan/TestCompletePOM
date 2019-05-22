@@ -13,8 +13,7 @@ def NavigateToSystemUserPage():
   
   WebObjAdmin.Click();
   WebObjUsrMgmt.Click();
-  Waiter.WaitTillDocumentReady();
-
+  Waiter.Wait(3)
   strPageUrl = BrowserFactry.GetPageUrl()
   
   Log.Checkpoint('Navigate To Sytem User Page Successfully: '+strPageUrl) if(aqString.Find(strPageUrl,'viewSystemUsers') != -1)else Log.Error('Navigate To Sytem User Page Failed: ' +strPageUrl)
