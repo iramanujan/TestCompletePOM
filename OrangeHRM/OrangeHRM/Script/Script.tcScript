@@ -58,6 +58,9 @@
 		<folder name="EventHandler">
 			<child name="EventHandler" key="{ED2AFBD2-DE1C-4773-A53D-EAF87BA8E55B}" path="EventHandler.py" />
 		</folder>
+		<folder name="Logger">
+			<child name="Logger" key="{5C46FB9E-30B3-4080-A604-E585223B1876}" path="Logger.py" />
+		</folder>
 		<child name="Unit1" key="{72EC33BF-3CA9-4330-B19E-C14610E755A4}" path="Unit1.py" />
 	</children>
 </Root>

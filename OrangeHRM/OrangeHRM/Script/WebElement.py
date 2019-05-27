@@ -9,9 +9,7 @@ def GetWebElement(FindBy, Value, All=False):
   
   ObjAttributes = Log.CreateNewAttributes()
   ObjAttributes.Bold = True
-  ObjAttributes.BackColor = clYellow
-  #ObjAttributes.FontColor = clRed
-  #Log.Error(traceback.format_exc(), traceback.format_exc(), pmNormal, ObjAttributes)
+  ObjAttributes.BackColor = clLtGray #clYellow
   Log.Message("Search Object With, How: {"+FindBy+"}, Using: {"+Value+"}",'', pmNormal, ObjAttributes);
   return  Waiter.Synchronization(FindBy,Value,All);
 
@@ -29,19 +27,19 @@ def FindElement(FindBy, Value, All=False):
     WebElement = None;
   return WebElement;
      
-def FindElementByXpath(value):
+def FindElementByXpath(value):  
   webElement = BrowserFactry.GetPageObject().EvaluateXPath(value)[0];
   return webElement
     
-def FindElementByQuerySelector(value):
+def FindElementByQuerySelector(value):  
   webElement = BrowserFactry.GetPageObject().QuerySelector(value);
   return webElement
   
-def FindElementsByXpath(value):
+def FindElementsByXpath(value):  
   webElements = BrowserFactry.GetPageObject().EvaluateXPath(value);
   return webElements
     
-def FindElementsByQuerySelector(value):
+def FindElementsByQuerySelector(value):  
   webElements = BrowserFactry.GetPageObject().QuerySelectorAll(value);
   return webElements
   

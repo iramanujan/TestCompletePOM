@@ -77,8 +77,19 @@ ObjectRepository = {
                                                     "FindBy"       :   "cssSelector",
                                                     "Value"         :   "#resultTable > thead > tr > th:nth-child(COLUMNINDEX) > a",
                                                     "All"               :   False
-                                                  }
-                                                  
+                                                  },
+                                      "Add": 
+                                                  {
+                                                    "FindBy"       :   "cssSelector",
+                                                    "Value"         :   "#btnAdd",
+                                                    "All"               :   False
+                                                  },
+                                      "Delete": 
+                                                  {
+                                                    "FindBy"       :   "cssSelector",
+                                                    "Value"         :   "#btnDelete",
+                                                    "All"               :   False
+                                                  }    
                                                   
                                      } 
        
@@ -149,7 +160,6 @@ def UserWebTable():
   All = GetValueFromOR("UserWebTable","All");
   WebObject = WebElement.GetWebElement(FindBy,Value,All)
   return WebObject;
-
   
 def Search():
   FindBy = GetValueFromOR("Search","FindBy");
@@ -166,7 +176,23 @@ def Reset():
   WebObject = WebElement.GetWebElement(FindBy,Value,All)
   WebObject.focus
   return WebObject
-  
+
+def Add():
+  FindBy = GetValueFromOR("Add","FindBy");
+  Value = GetValueFromOR("Add","Value");
+  All = GetValueFromOR("Add","All");
+  WebObject = WebElement.GetWebElement(FindBy,Value,All)
+  WebObject.focus
+  return WebObject
+
+def Delete():
+  FindBy = GetValueFromOR("Delete","FindBy");
+  Value = GetValueFromOR("Delete","Value");
+  All = GetValueFromOR("Delete","All");
+  WebObject = WebElement.GetWebElement(FindBy,Value,All)
+  WebObject.focus
+  return WebObject
+
 def FirstRecord(columnIndex):
   FindBy = GetValueFromOR("FirstRecord","FindBy");
   Value = GetValueFromOR("FirstRecord","Value");
@@ -175,7 +201,6 @@ def FirstRecord(columnIndex):
   WebObject = WebElement.GetWebElement(FindBy,UpdatedValue,All)
   WebObject.focus
   return WebObject
-
   
 def LastRecord(columnIndex):
   FindBy = GetValueFromOR("LastRecord","FindBy");
@@ -185,7 +210,6 @@ def LastRecord(columnIndex):
   WebObject = WebElement.GetWebElement(FindBy,UpdatedValue,All)
   WebObject.focus
   return WebObject
-
   
 def Sort(columnIndex):
   FindBy = GetValueFromOR("Sort","FindBy");

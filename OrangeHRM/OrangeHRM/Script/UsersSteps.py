@@ -3,6 +3,7 @@ import BrowserFactry
 import Waiter
 import LoginSteps
 import WebElementHelper
+import Logger
 
 
 def NavigateToSystemUserPage():
@@ -15,8 +16,8 @@ def NavigateToSystemUserPage():
   WebObjUsrMgmt.Click();
   Waiter.Wait(3)
   strPageUrl = BrowserFactry.GetPageUrl()
-  
-  Log.Checkpoint('Navigate To Sytem User Page Successfully: '+strPageUrl) if(aqString.Find(strPageUrl,'viewSystemUsers') != -1)else Log.Error('Navigate To Sytem User Page Failed: ' +strPageUrl)
+ # Logger.CheckPoint
+  Logger.CheckPoint('Navigate To Sytem User Page Successfully: '+strPageUrl) if(aqString.Find(strPageUrl,'viewSystemUsers') != -1)else Log.Error('Navigate To Sytem User Page Failed: ' +strPageUrl)
 
 def VerifySorting(strColumnName):
   columnIndex = GetColumnIndexByName(strColumnName);
@@ -30,7 +31,7 @@ def VerifySorting(strColumnName):
   strLastRecord = Users.LastRecord(columnIndex).textContent;
     
   WebObjsSort.Click();
-  Waiter.Wait(1)
+  Waiter.Wait(3)
   strDesc = WebObjsSort.getAttribute('class')
 
   strFirstRecord2 = Users.FirstRecord(columnIndex).textContent;
@@ -39,7 +40,7 @@ def VerifySorting(strColumnName):
   Log.Message("Order By: {"+strColumnName+" "+strAsc+"} First Value: {"+strFirstRecord+"}, Last Value: {"+strLastRecord+"}")
   Log.Message("Order By: {"+strColumnName+" "+strDesc+"} First Value: {"+strFirstRecord2+"}, Last Value: {"+strLastRecord2+"}")
   
-  Log.Checkpoint("Validate Sorting On Column {"+strColumnName+"} . Pass") if(strFirstRecord == strLastRecord2 and strLastRecord == strFirstRecord2) else Log.Error("Validate Sorting On Column {"+strColumnName+"}. Failed")
+  Logger.CheckPoint("Validate Sorting On Column {"+strColumnName+"} . Pass") if(strFirstRecord == strLastRecord2 and strLastRecord == strFirstRecord2) else Log.Error("Validate Sorting On Column {"+strColumnName+"}. Failed")
         
 def GetColumnIndexByName(strColumnName):
   WebObjsUserWebTable = Users.UserWebTable()
