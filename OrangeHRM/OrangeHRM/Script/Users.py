@@ -36,6 +36,12 @@ ObjectRepository = {
                                                     "Value"         :   "#searchSystemUser_employeeName_empName",
                                                     "All"              :   False
                                                   },
+                                      "EmployeeNameList": 
+                                                  {
+                                                    "FindBy"       :   "xpath",
+                                                    "Value"         :   "//div[@class='ac_results']/ul/li/strong[text()='TEXT']",
+                                                    "All"              :   False
+                                                  },
                                       "UserStatus": 
                                                   {
                                                     "FindBy"       :   "cssSelector",
@@ -247,5 +253,13 @@ def RowCount(columnIndex):
   Value = GetValueFromOR("RowCount","Value");
   UpdatedValue = aqString.Replace(Value,"COLUMNINDEX",str(columnIndex))
   All = GetValueFromOR("RowCount","All");
+  WebObject = WebElement.GetWebElement(FindBy,UpdatedValue,All)
+  return WebObject
+  
+def EmployeeNameList(strEmployeeName):
+  FindBy = GetValueFromOR("EmployeeNameList","FindBy");
+  Value = GetValueFromOR("EmployeeNameList","Value");
+  UpdatedValue = aqString.Replace(Value,"TEXT",str(strEmployeeName))
+  All = GetValueFromOR("EmployeeNameList","All");
   WebObject = WebElement.GetWebElement(FindBy,UpdatedValue,All)
   return WebObject

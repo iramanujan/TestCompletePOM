@@ -76,8 +76,12 @@ def ApplyFilter(strFilterOn):
       Log.Error("Unable To Select Value {"+strFilterValue+"} from {"+strFilterOn+"} Dropdown");
     
   if(strFilterOn == 'Employee Name'):
-    WebObjUserName  = Users.UserName()
+    WebObjEmployeeName  = Users.EmployeeName()
+    lstEmpName = GetRowData(strFilterOn)
+    strFilterValue = Helper.SelectRandomValueFromList(lstEmpName);
     Sys.Desktop.Keys(strFilterValue);
+    WebObjEmployeeNameList  = Users.EmployeeNameList(strFilterValue)
+    WebObjEmployeeNameList.Click();
     
   if(strFilterOn == 'Status'):
     WebObjUserStatus  = Users.UserStatus()

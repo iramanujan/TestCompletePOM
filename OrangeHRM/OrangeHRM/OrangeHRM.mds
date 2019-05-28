@@ -46,45 +46,51 @@
 								<testParameters />
 								<children />
 							</testItem>
-							<testItem name="ValidateSortingForStatus" key="{A3641B01-B7DA-492D-9CA4-0351DEB182F7}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateSortingForStatus" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ValidateSorting - Status" key="{A3641B01-B7DA-492D-9CA4-0351DEB182F7}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateSorting" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
-									<param0 name="strStatus" type="3" localVarName="" varType="8" value="Status" />
+									<param0 name="strSortingOn" type="3" localVarName="" varType="8" value="Status" />
 								</testParameters>
 								<children />
 							</testItem>
-							<testItem name="ValidateSortingForUserRole" key="{56BF5AA4-567E-437B-8316-6F5F5277CF8F}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateSortingForUserRole" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ValidateSorting - UserRole" key="{56BF5AA4-567E-437B-8316-6F5F5277CF8F}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateSorting" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
-									<param0 name="strUserRole" type="3" localVarName="" varType="8" value="User Role" />
+									<param0 name="strSortingOn" type="3" localVarName="" varType="8" value="User Role" />
 								</testParameters>
 								<children />
 							</testItem>
-							<testItem name="ValidateSortingForEmployeeName" key="{DB15C632-6A28-471F-A59A-D570B2DEA89B}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateSortingForEmployeeName" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ValidateSorting - EmployeeName" key="{DB15C632-6A28-471F-A59A-D570B2DEA89B}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateSorting" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
-									<param0 name="strEmployeeName" type="3" localVarName="" varType="8" value="Employee Name" />
+									<param0 name="strSortingOn" type="3" localVarName="" varType="8" value="Employee Name" />
 								</testParameters>
 								<children />
 							</testItem>
-							<testItem name="ValidateSortingForUsername" key="{FB6BC1FC-A1D5-40C5-AAA5-73C926A46C3D}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateSortingForUsername" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ValidateSorting - Username" key="{FB6BC1FC-A1D5-40C5-AAA5-73C926A46C3D}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateSorting" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
-									<param0 name="strUsername" type="3" localVarName="" varType="8" value="Username" />
+									<param0 name="strSortingOn" type="3" localVarName="" varType="8" value="Username" />
 								</testParameters>
 								<children />
 							</testItem>
-							<testItem name="ValidateFilterOnUsername" key="{DCA427B1-16AD-4E64-AD22-EB02911ACFAD}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateFilterOnUsername" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ValidateFilter - Username" key="{DCA427B1-16AD-4E64-AD22-EB02911ACFAD}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateFilter" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
 									<param0 name="strFilterOn" type="3" localVarName="" varType="8" value="Username" />
 								</testParameters>
 								<children />
 							</testItem>
-							<testItem name="ValidateFilterOnUserRole" key="{C2EA6CE1-A9AB-429E-9518-AF8F279FC038}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateFilterOnUserRole" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ValidateFilter - User Role" key="{C2EA6CE1-A9AB-429E-9518-AF8F279FC038}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateFilter" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
 									<param0 name="strFilterOn" type="3" localVarName="" varType="8" value="User Role" />
 								</testParameters>
 								<children />
 							</testItem>
-							<testItem name="ValidateFilterOnStatus" key="{4614632B-7AC6-4F8F-84B9-F2A4FB164A7F}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateFilterOnStatus" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ValidateFilter - Status" key="{4614632B-7AC6-4F8F-84B9-F2A4FB164A7F}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateFilter" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
 									<param0 name="strFilterOn" type="3" localVarName="" varType="8" value="Status" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="ValidateFilter-Employee Name" key="{E4C5BCC0-FDC8-4062-AED1-5AF3728872D2}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateFilter" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="strFilterOn" type="3" localVarName="" varType="8" value="Employee Name" />
 								</testParameters>
 								<children />
 							</testItem>

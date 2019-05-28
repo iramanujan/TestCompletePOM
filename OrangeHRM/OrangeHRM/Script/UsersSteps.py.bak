@@ -15,7 +15,7 @@ def NavigateToSystemUserPage():
   
   WebObjAdmin.Click();
   WebObjUsrMgmt.Click();
-  Waiter.Wait(3)
+  Waiter.Wait(5)
   strPageUrl = BrowserFactry.GetPageUrl()
  # Logger.CheckPoint
   Logger.CheckPoint('Navigate To Sytem User Page Successfully: '+strPageUrl) if(aqString.Find(strPageUrl,'viewSystemUsers') != -1)else Log.Error('Navigate To Sytem User Page Failed: ' +strPageUrl)
@@ -76,8 +76,12 @@ def ApplyFilter(strFilterOn):
       Log.Error("Unable To Select Value {"+strFilterValue+"} from {"+strFilterOn+"} Dropdown");
     
   if(strFilterOn == 'Employee Name'):
-    WebObjUserName  = Users.UserName()
+    WebObjEmployeeName  = Users.EmployeeName()
+    lstEmpName = GetRowData(strFilterOn)
+    strFilterValue = Helper.SelectRandomValueFromList(lstEmpName);
     Sys.Desktop.Keys(strFilterValue);
+    WebObjEmployeeNameList  = Users.EmployeeNameList(strFilterValue)
+    WebObjEmployeeNameList.Click();
     
   if(strFilterOn == 'Status'):
     WebObjUserStatus  = Users.UserStatus()

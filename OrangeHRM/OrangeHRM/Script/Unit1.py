@@ -14,11 +14,9 @@
   
 # Specify the browser using a test parameter
 def Test1():
-  string = "Ess,Admin"
-  li = list(string.split(","))
-  import random
-  a=  random.choice(li); 
-  Log.Message(a)
+  Value = "//div[@class='ac_results']/ul/li/strong[text()='TEXT']"
+  strEmployeeName = 'Steven Edwards'
+  Log.Message(aqString.Replace(Value,"TEXT",str(strEmployeeName)))
   
   
 

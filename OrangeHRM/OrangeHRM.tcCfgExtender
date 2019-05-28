@@ -25,7 +25,7 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{90E43FDA-D93B-4761-8135-BD6F50520367}"/>
+				<Prp name="activity" type="S" value="{72EC33BF-3CA9-4330-B19E-C14610E755A4}"/>
 			</Node>
 			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}"/>
 			<Node name="{415b5aa1-c6ac-4d4d-9a53-063a521a45ab}">
@@ -33,11 +33,11 @@
 					<Node name="0">
 						<Node name="editor">
 							<Node name="{8c45957c-f4b3-4dd7-9212-49cbd350f69f}">
-								<Prp name="key" type="S" value="{C513F976-68B5-4644-B695-18D8395F39AB}"/>
+								<Prp name="key" type="S" value="{C4436F68-66B6-4F8A-9CF8-8597DF7DC41F}"/>
 							</Node>
 							<Node name="{d0151f8e-51fe-49da-8534-008b9f1b7c45}">
 								<Prp name="col" type="I" value="0"/>
-								<Prp name="key" type="S" value="{27999ED5-EB5C-43A5-8A48-F7F3CD031E62}"/>
+								<Prp name="key" type="S" value="{84AE6374-C6EB-4F18-A0FC-A3A6FF3CE5D5}"/>
 								<Prp name="line" type="I" value="68"/>
 								<Prp name="sellength" type="I" value="0"/>
 								<Prp name="selstart" type="I" value="4819"/>
@@ -69,7 +69,7 @@
 					<Prp name="description" type="S" value=""/>
 					<Prp name="enabled" type="B" value="-1"/>
 					<Prp name="executable" type="B" value="-1"/>
-					<Prp name="line" type="I" value="69"/>
+					<Prp name="line" type="I" value="78"/>
 					<Prp name="owner" type="S" value="{6275C243-D43D-41FB-8029-DC9FBB32AD23}"/>
 					<Prp name="pass count" type="I" value="0"/>
 				</Node>
@@ -712,15 +712,15 @@
 					<Node name="orangehrm">
 						<Node name="advanced">
 							<Node name="script">
-								<Node name="helper"/>
-								<Node name="logger"/>
+								<Node name="handler">
+									<Node name="webelementhandler"/>
+								</Node>
 								<Node name="testharness">
 									<Node name="admin">
 										<Node name="user management">
 											<Node name="users"/>
 										</Node>
 									</Node>
-									<Node name="login"/>
 								</Node>
 								<Node name="webpageentries">
 									<Node name="admin">
@@ -738,7 +738,6 @@
 								</Node>
 							</Node>
 						</Node>
-						<Node name="keywordtests"/>
 					</Node>
 				</Node>
 				<Node name="orangehrm logs">
