@@ -1,4 +1,4 @@
-﻿import datetime
+﻿import datetime 
 from random import *
 import decimal
 import string
@@ -110,7 +110,16 @@ def DiffList(li1, li2):
 def CompList(li1,li2):
   diff = Helper.DiffList(li1,li2)
   return not(len(diff))
-	  
+  
+def SelectRandomValueFromList(list):
+  import random
+  return random.choice(list);
+  
+  
+def ConvertStringIntoList(strInput,strDelimiter):
+  listOutput = list(strInput.split(strDelimiter));
+  return listOutput;
+
 def GetRandInput(FieldType,InputType,OrignalValue):
   RandVal = None;
   if(aqString.ToUpper(FieldType) == "TEXT"):

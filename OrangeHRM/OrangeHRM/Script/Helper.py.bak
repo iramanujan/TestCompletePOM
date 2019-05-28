@@ -11,7 +11,7 @@ def execCLIComm(Comm):
 def closeAllBrowser():
 	#Helper.execCLIComm("cmd /c TASKKILL /F /IM firefox.exe /T")
 	Helper.execCLIComm("cmd /c TASKKILL /F /IM chrome.exe /T")
-	#Helper.execCLIComm("cmd /c TASKKILL /F /IM iexplore.exe /T")
+	Helper.execCLIComm("cmd /c TASKKILL /F /IM iexplore.exe /T")
 	#Helper.execCLIComm("cmd /c TASKKILL /F /IM Excel.exe /T")
 
 	  
@@ -110,7 +110,15 @@ def DiffList(li1, li2):
 def CompList(li1,li2):
   diff = Helper.DiffList(li1,li2)
   return not(len(diff))
-	  
+  
+def SelectRandomValueFromList(list):
+  return random.choice(list);
+  
+  
+def ConvertStringIntoList(strInput,strDelimiter):
+  listOutput = list(strInput.split(strDelimiter));
+  return listOutput;
+
 def GetRandInput(FieldType,InputType,OrignalValue):
   RandVal = None;
   if(aqString.ToUpper(FieldType) == "TEXT"):

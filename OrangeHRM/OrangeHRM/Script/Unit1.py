@@ -14,7 +14,11 @@
   
 # Specify the browser using a test parameter
 def Test1():
-  Browsers.Item['iexplore'].Run("http://smartbear.com");
+  string = "Ess,Admin"
+  li = list(string.split(","))
+  import random
+  a=  random.choice(li); 
+  Log.Message(a)
   
   
 

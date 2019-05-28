@@ -18,3 +18,15 @@ def ValidateSortingForEmployeeName(strEmployeeName):
 def ValidateSortingForUsername(strUsername):
   UsersSteps.NavigateToSystemUserPage();
   UsersSteps.VerifySorting(strUsername)
+  
+def ValidateFilterOnUsername(strFilterOn):
+  UsersSteps.NavigateToSystemUserPage();
+  UsersSteps.ApplyFilter(strFilterOn);
+  
+def ValidateFilterOnUserRole(strFilterOn):
+  UsersSteps.NavigateToSystemUserPage();
+  UsersSteps.ApplyFilter(strFilterOn);
+
+def ValidateFilterOnStatus(strFilterOn):
+  UsersSteps.NavigateToSystemUserPage();
+  UsersSteps.ApplyFilter(strFilterOn);

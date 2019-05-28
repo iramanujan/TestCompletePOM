@@ -14,7 +14,11 @@
   
 # Specify the browser using a test parameter
 def Test1():
-  Browsers.Item['iexplore'].Run("http://smartbear.com");
+  string = "Ess,Admin"
+  li = list(string.split(","))
+  import random
+  a=  random.choice(li); 
+  Log.Message(str(list(a)))
   
   
 
@@ -32,9 +36,7 @@ def Test3():
   OCR.Recognize(browser.BrowserWindow).BlockByText("OrangeHRM", spLeftMost).Click()
   Browsers.Item[btChrome].Navigate("https://opensource-demo.orangehrmlive.com/index.php/admin/viewSystemUsers?sortField=u.Employee.emp_firstname&sortOrder=DESC")
   page = browser.pageOrangehrm
-  page.Drag(1279, 46, -28, 83)
   table = page.panelCustomerlist.formFrmlistOhrmlistcomponent.tableResulttable
-  table.cell.Click(358, 9)
   table.link.Click();
   Log.Message(table.link.getAttribute('class'))
   page.Wait()

@@ -72,6 +72,18 @@ ObjectRepository = {
                                                     "Value"         :   "#resultTable > tbody > tr:last-child > td:nth-child(COLUMNINDEX)",
                                                     "All"               :   False
                                                   },
+                                      "Cell": 
+                                                  {
+                                                    "FindBy"       :   "cssSelector",
+                                                    "Value"         :   "#resultTable > tbody > tr:nth-child(ROWINDEX) > td:nth-child(COLUMNINDEX)",
+                                                    "All"               :   False
+                                                  },
+                                      "RowCount": 
+                                                  {
+                                                    "FindBy"       :   "cssSelector",
+                                                    "Value"         :   "#resultTable > tbody > tr > td:nth-child(COLUMNINDEX)",
+                                                    "All"               :   True
+                                                  },
                                       "Sort": 
                                                   {
                                                     "FindBy"       :   "cssSelector",
@@ -218,4 +230,22 @@ def Sort(columnIndex):
   All = GetValueFromOR("Sort","All");
   WebObject = WebElement.GetWebElement(FindBy,UpdatedValue,All)
   WebObject.focus
+  return WebObject
+
+def Cell(columnIndex,rowIndex):
+  FindBy = GetValueFromOR("Cell","FindBy");
+  Value = GetValueFromOR("Cell","Value");
+  UpdatedValue = aqString.Replace(Value,"COLUMNINDEX",str(columnIndex))
+  UpdatedValue2 =  aqString.Replace(UpdatedValue,"ROWINDEX",str(rowIndex))
+  All = GetValueFromOR("Cell","All");
+  WebObject = WebElement.GetWebElement(FindBy,UpdatedValue2,All)
+  WebObject.focus
+  return WebObject
+  
+def RowCount(columnIndex):
+  FindBy = GetValueFromOR("RowCount","FindBy");
+  Value = GetValueFromOR("RowCount","Value");
+  UpdatedValue = aqString.Replace(Value,"COLUMNINDEX",str(columnIndex))
+  All = GetValueFromOR("RowCount","All");
+  WebObject = WebElement.GetWebElement(FindBy,UpdatedValue,All)
   return WebObject

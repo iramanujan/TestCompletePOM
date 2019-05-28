@@ -70,6 +70,24 @@
 								</testParameters>
 								<children />
 							</testItem>
+							<testItem name="ValidateFilterOnUsername" key="{DCA427B1-16AD-4E64-AD22-EB02911ACFAD}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateFilterOnUsername" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="strFilterOn" type="3" localVarName="" varType="8" value="Username" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="ValidateFilterOnUserRole" key="{C2EA6CE1-A9AB-429E-9518-AF8F279FC038}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateFilterOnUserRole" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="strFilterOn" type="3" localVarName="" varType="8" value="User Role" />
+								</testParameters>
+								<children />
+							</testItem>
+							<testItem name="ValidateFilterOnStatus" key="{4614632B-7AC6-4F8F-84B9-F2A4FB164A7F}" group="False" enabled="True" testMoniker="{C331A1DF-104E-48A7-9EB4-AE3AE3D9353C}ValidateFilterOnStatus" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
+								<testParameters>
+									<param0 name="strFilterOn" type="3" localVarName="" varType="8" value="Status" />
+								</testParameters>
+								<children />
+							</testItem>
 						</children>
 					</testItem>
 				</children>
