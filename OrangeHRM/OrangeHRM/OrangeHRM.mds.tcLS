@@ -28,7 +28,7 @@
 				<Node name="datav3">
 					<Node name="var0">
 						<Node name="value">
-							<Prp name="strvalue" type="H" value="6300680072006F006D006500"/>
+							<Prp name="strvalue" type="H" value="6300680072006F006D006500200020002000200020002000660069007200650066006F007800"/>
 						</Node>
 						<Prp name="name" type="S" value="Chrome"/>
 					</Node>
@@ -43,6 +43,21 @@
 							<Prp name="intvalue" type="I" value="3"/>
 						</Node>
 						<Prp name="name" type="S" value="PollingEveryInSec"/>
+					</Node>
+					<Node name="var11">
+						<Prp name="name" type="S" value="TestExecutedCount"/>
+					</Node>
+					<Node name="var12">
+						<Prp name="name" type="S" value="TestBrowserList"/>
+					</Node>
+					<Node name="var13">
+						<Prp name="name" type="S" value="TestBrowser"/>
+					</Node>
+					<Node name="var14">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="6300680072006F006D006500"/>
+						</Node>
+						<Prp name="name" type="S" value="DefaultBrowser"/>
 					</Node>
 					<Node name="var2">
 						<Node name="value">
@@ -70,7 +85,7 @@
 					</Node>
 					<Node name="var6">
 						<Node name="value">
-							<Prp name="intvalue" type="I" value="5"/>
+							<Prp name="intvalue" type="I" value="1"/>
 						</Node>
 						<Prp name="name" type="S" value="TimeOutInMin"/>
 					</Node>
@@ -78,7 +93,7 @@
 						<Node name="value">
 							<Prp name="strvalue" type="H" value="6300680072006F006D006500"/>
 						</Node>
-						<Prp name="name" type="S" value="TestBrowser"/>
+						<Prp name="name" type="S" value="TestBrowserDemo"/>
 					</Node>
 					<Node name="var8">
 						<Node name="value">

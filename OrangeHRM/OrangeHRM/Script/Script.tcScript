@@ -43,6 +43,7 @@
 			</folder>
 			<folder name="Browser Handler">
 				<child name="BrowserFactry" key="{F07991D2-8D2A-4F39-B3E1-2B34B2103AD9}" path="BrowserFactry.py" />
+				<child name="BrowserProperties" key="{B1F433BC-1C00-4CB4-943C-4A4630603417}" path="BrowserProperties.py" />
 			</folder>
 			<folder name="Wait Handler">
 				<child name="Waiter" key="{C5A34B3A-3CB9-4495-BE2E-BDFFFD063174}" path="Waiter.py" />

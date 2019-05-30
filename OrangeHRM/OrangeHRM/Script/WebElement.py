@@ -4,12 +4,9 @@ import Waiter
 
 def GetWebElement(FindBy, Value, All=False):
   WebElement = None;  
-  #WebElement = FindElement(FindBy,Value,All);
-  #WebElement if(WebElement is not None)else
-  
   ObjAttributes = Log.CreateNewAttributes()
   ObjAttributes.Bold = True
-  ObjAttributes.BackColor = clLtGray #clYellow
+  ObjAttributes.BackColor = clLtGray
   Log.Message("Search Object With, How: {"+FindBy+"}, Using: {"+Value+"}",'', pmNormal, ObjAttributes);
   return  Waiter.Synchronization(FindBy,Value,All);
 
@@ -27,21 +24,41 @@ def FindElement(FindBy, Value, All=False):
     WebElement = None;
   return WebElement;
      
-def FindElementByXpath(value):  
-  webElement = BrowserFactry.GetPageObject().EvaluateXPath(value)[0];
-  return webElement
+def FindElementByXpath(value): 
+  webElement = None;
+  try:
+    webElement = BrowserFactry.GetPageObject().EvaluateXPath(value)[0];
+  except:
+    webElement = None;
+  finally:
+    return  webElement
     
 def FindElementByQuerySelector(value):  
-  webElement = BrowserFactry.GetPageObject().QuerySelector(value);
-  return webElement
+  webElement = None;
+  try:
+    webElement = BrowserFactry.GetPageObject().QuerySelector(value);
+  except:
+    webElement = None;
+  finally:
+    return  webElement
   
 def FindElementsByXpath(value):  
-  webElements = BrowserFactry.GetPageObject().EvaluateXPath(value);
-  return webElements
+  webElements = None;
+  try:
+    webElements = BrowserFactry.GetPageObject().EvaluateXPath(value);
+  except:
+    webElements = None;
+  finally:
+    return  webElements
     
 def FindElementsByQuerySelector(value):  
-  webElements = BrowserFactry.GetPageObject().QuerySelectorAll(value);
-  return webElements
+  webElements = None;
+  try:
+   webElements = BrowserFactry.GetPageObject().QuerySelectorAll(value);
+  except:
+    webElements = None;
+  finally:
+    return  webElements
   
 def IsVisible(WebElement):
   if(WebElement is None):return False;

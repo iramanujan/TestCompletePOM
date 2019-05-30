@@ -1,10 +1,13 @@
 ﻿import Waiter
+import Helper
+from BrowserProperties import BrowserProperties 
 
 AppUrl      =   str(Project.Variables.VariableByName['ApplicationURL']);
 PageUrl     =   str(Project.Variables.VariableByName['PageURL']);
-TestBrowser =   str(Project.Variables.VariableByName['TestBrowser']);
-  
-def GetPageObject():
+ObjBrowserProperties = BrowserProperties()
+    
+def GetPageObject():  
+  TestBrowser = ObjBrowserProperties.GetTestBrowser();
   PageObj = Sys.Browser(TestBrowser).Page(PageUrl)
   return PageObj
   
@@ -18,18 +21,22 @@ def GetPageUrl():
   Log.Message("Page URL "+ strPageUrl);
   return strPageUrl
 
-  
 def InitBrowser():
+  TestBrowser = ObjBrowserProperties.GetTestBrowser();
   if(TestBrowser == "iexplore"):
     BrowserFactry.LaunchIE();
   elif(TestBrowser == "chrome"):
     BrowserFactry.LaunchChrome();
+  elif(TestBrowser == "firefox"):
+    BrowserFactry.LaunchFirefox();
   else:
-    Log.Message("")
+    Log.Message("No Test Browser Found...");
+    Runner.Stop();
     
   return GetPageObject() if(Waiter.WaitTillDocumentReady()) else None;
     
 def LaunchChrome():
+  TestBrowser = ObjBrowserProperties.GetTestBrowser();
   Browsers.Item[TestBrowser].RunOptions = "--incognito --disable-session-crashed-bubble --disable-infobars --disable-password-generation --clear-token-service --ignore-autocomplete-off-autofill";
   Browsers.Item[TestBrowser].Run(AppUrl);
   #Log Browser version
@@ -39,8 +46,19 @@ def LaunchChrome():
   #Maximize Browser    
   Sys.Browser().BrowserWindow(0).Maximize()
 
-         
+def LaunchFirefox():
+  TestBrowser = ObjBrowserProperties.GetTestBrowser();
+  Browsers.Item[TestBrowser].Run(AppUrl);
+  #Log Browser version
+  Log.Message("Browser version: " + aqConvert.VarToStr(Browsers.Item[TestBrowser].Version));
+  #Log Browser Description:
+  Log.Message("Browser Description: " + Browsers.Item[TestBrowser].Description);
+  #Maximize Browser    
+  Sys.Browser().BrowserWindow(0).Maximize()
+  
+      
 def LaunchIE():
+  TestBrowser = ObjBrowserProperties.GetTestBrowser();
   Browsers.Item[TestBrowser].Run(AppUrl);
   #Log Browser version
   Log.Message("Browser version: " + aqConvert.VarToStr(Browsers.Item[TestBrowser].Version));

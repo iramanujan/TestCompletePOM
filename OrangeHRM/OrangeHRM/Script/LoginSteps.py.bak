@@ -5,7 +5,7 @@ import Waiter
 def LoginWithValidInput():
   StrUserName = str(Project.Variables.VariableByName['UserName']);
   StrPassword = str(Project.Variables.VariableByName['Password']);
-  BrowserFactry.InitBrowser();
+  #BrowserFactry.InitBrowser();
   
   WebObjUserName = Login.UserName();
   Sys.Desktop.Keys(StrUserName);
@@ -16,7 +16,7 @@ def LoginWithValidInput():
   WebObjLogin = Login.Login();
   WebObjLogin.Click()
   
-  if(Waiter.WaitForDocumentReady()):
+  if(Waiter.WaitTillDocumentReady()):
     WebObjLoginUsrName = Login.GetLoginUserName();
   
     ActualLoginUsrName = WebObjLoginUsrName.textContent;
@@ -31,7 +31,7 @@ def LoginWithValidInput():
     
 def LoginWithEmptyUserName():
   StrPassword = str(Project.Variables.VariableByName['Password']);
-  BrowserFactry.InitBrowser();
+  #BrowserFactry.InitBrowser();
     
   WebObjPassword = Login.Password();
   Sys.Desktop.Keys(StrPassword);
@@ -55,7 +55,7 @@ def LoginWithEmptyUserName():
 def LoginWithEmptyPassword():
   StrUserName = str(Project.Variables.VariableByName['UserName']);
 
-  BrowserFactry.InitBrowser();
+  #BrowserFactry.InitBrowser();
   
   WebObjUserName = Login.UserName();
   Sys.Desktop.Keys(StrUserName);
@@ -77,7 +77,7 @@ def LoginWithEmptyPassword():
     Log.Error("Validation for Password Empty Error Message Failed. Actual Error Msg: "+ActualErrorMsg+", Expected Error Msg: "+ExpectedErrorMsg);
   
 def LoginWithInvalidCredentials(StrUserName,StrPassword):  
-  BrowserFactry.InitBrowser();
+  #BrowserFactry.InitBrowser();
   
   WebObjUserName = Login.UserName();
   Sys.Desktop.Keys(StrUserName);

@@ -9,12 +9,11 @@ def execCLIComm(Comm):
 	  subprocess.call(Comm)
 	
 def closeAllBrowser():
-	#Helper.execCLIComm("cmd /c TASKKILL /F /IM firefox.exe /T")
-	Helper.execCLIComm("cmd /c TASKKILL /F /IM chrome.exe /T")
-	Helper.execCLIComm("cmd /c TASKKILL /F /IM iexplore.exe /T")
+	Helper.execCLIComm("cmd /c TASKKILL /F /IM firefox.exe /IM chrome.exe /IM iexplore.exe /IM Excel.exe /T")
+	#Helper.execCLIComm("cmd /c TASKKILL /F /IM chrome.exe /T")
+	#Helper.execCLIComm("cmd /c TASKKILL /F /IM iexplore.exe /T")
 	#Helper.execCLIComm("cmd /c TASKKILL /F /IM Excel.exe /T")
 
-	  
 def CloseProcess(AppName):
   ObjSys = Sys.WaitProcess(AppName,100)
   if(ObjSys.Exists):
@@ -23,7 +22,6 @@ def CloseProcess(AppName):
       Log.Warning(AppName + " was not closed successfully and will be terminated.")
       ObjSys.Terminate()
 	    
-  
 def GetRandomEmail(Range):
   aqString.ListSeparator = "-"
   min = aqConvert.StrToInt(aqString.GetListItem(Range,0))
@@ -113,9 +111,17 @@ def CompList(li1,li2):
   
 def SelectRandomValueFromList(list):
   import random
-  return random.choice(list);
-  
-  
+  value = random.choice(list);
+  return value
+
+def SelectRandomValueFromListWithExclusion(list,strExcludeValue=''):
+  import random
+  value = random.choice(list);
+  if(value == strExcludeValue):
+    return SelectRandomValueFromListWithExclusion(list,strExcludeValue)
+  else:
+    return value
+
 def ConvertStringIntoList(strInput,strDelimiter):
   listOutput = list(strInput.split(strDelimiter));
   return listOutput;
@@ -139,3 +145,14 @@ def GetRandInput(FieldType,InputType,OrignalValue):
     if(RandVal == OrignalValue):
       RandVal = Helper.GetDecimal(InputType);
   return RandVal;
+  
+def OverWrieFile(strFilePath,strText):
+  with open(strFilePath, 'w') as filetowrite:
+      filetowrite.write(strText) #chrome
+      filetowrite.close()
+      
+def ReadFile(strFilePath):
+  with open(strFilePath, 'r') as ObjFile:
+    if ObjFile.mode == 'r':
+      return ObjFile.read()
+  

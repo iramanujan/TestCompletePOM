@@ -36,5 +36,8 @@ def Synchronization(FindBy, Value, All=False,TimeOutInMin=int(Project.Variables.
       Log.Message("It's been 3 minutes finding this object, Please check app stat");
     webElement = WebElement.FindElement(FindBy,Value,All);
     TimeElapsed = DateTime.GetTimeDiffInMinutes(TimeStarted,DateTime.GetCurrentTime())
-
-  return webElement;
+    
+  if(webElement == None):
+    Log.Error("No Object Found After 5 Min., Find By: {"+FindBy+"}, Value: {"+Value+"}");
+  else:
+    return webElement;

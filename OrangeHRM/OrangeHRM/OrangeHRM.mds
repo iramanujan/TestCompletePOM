@@ -32,8 +32,8 @@
 							</testItem>
 							<testItem name="ValidateInvalidCredentialsErrorMsg" key="{460274DD-5988-43DF-AE81-6875A0446E6E}" group="False" enabled="True" testMoniker="{2AD0B07C-8D54-4741-A084-6F5AB8EB8177}VeriftInvalidCredentialsErrorMsg" count="1" timeout="15" stopOnError="2" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters>
-									<param0 name="strUserName" type="3" localVarName="" varType="8" value="test" />
-									<param1 name="strPassword" type="3" localVarName="" varType="8" value="test" />
+									<param0 name="strUserName" type="3" localVarName="" varType="8" value="test1" />
+									<param1 name="strPassword" type="3" localVarName="" varType="8" value="test1" />
 								</testParameters>
 								<children />
 							</testItem>
@@ -122,9 +122,9 @@
 					<DefValue IntValue="2" />
 				</Variable>
 				<Variable Name="TimeOutInMin" Type="{88422C25-DDF4-4EA1-B7CC-95779A023F5D}" Local="True" Descr="HTML Element Load Timeout">
-					<DefValue IntValue="5" />
+					<DefValue IntValue="1" />
 				</Variable>
-				<Variable Name="TestBrowser" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True" Descr="IE Browser">
+				<Variable Name="TestBrowserDemo" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True" Descr="IE Browser">
 					<DefValue StrValue="6300680072006F006D006500" />
 				</Variable>
 				<Variable Name="Environment" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True" Descr="QA Environment">
@@ -135,6 +135,18 @@
 				</Variable>
 				<Variable Name="PollingEveryInSec" Type="{88422C25-DDF4-4EA1-B7CC-95779A023F5D}" Local="True" Descr="Polling Every In Sec">
 					<DefValue IntValue="1" />
+				</Variable>
+				<Variable Name="TestExecutedCount" Type="{88422C25-DDF4-4EA1-B7CC-95779A023F5D}" Local="False" Descr="Test Executed Counter">
+					<DefValue IntValue="0" />
+				</Variable>
+				<Variable Name="TestBrowserList" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="False">
+					<DefValue StrValue="6300680072006F006D0065003B0069006500780070006C006F00720065003B00660069007200650066006F007800" />
+				</Variable>
+				<Variable Name="TestBrowser" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="False">
+					<DefValue StrValue="6300680072006F006D006500" />
+				</Variable>
+				<Variable Name="DefaultBrowser" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue StrValue="6300680072006F006D006500" />
 				</Variable>
 			</Items>
 		</data>
@@ -171,7 +183,7 @@
 				<row val0="Multi-threaded apartment" />
 			</data>
 		</setting>
-		<setting name="CLRBridge_PreferredArchitecture" type="6" rowIndex="1" colIndex="0">
+		<setting name="CLRBridge_PreferredArchitecture" type="6" rowIndex="2" colIndex="0">
 			<columns>
 				<column type="5" enabled="True" />
 			</columns>
@@ -610,7 +622,7 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="Playback_ErrHandling_OnError" type="6" rowIndex="1" colIndex="1">
+		<setting name="Playback_ErrHandling_OnError" type="6" rowIndex="2" colIndex="1">
 			<columns>
 				<column type="5" enabled="True" />
 				<column type="2" enabled="True" />
@@ -660,7 +672,7 @@
 		<setting name="Playback_Runtime_AutoWaitTimeout" type="2" value="10000" />
 		<setting name="Playback_Runtime_DelayBetweenEvents" type="2" value="50" />
 		<setting name="Playback_Runtime_DisableMouse" type="1" value="False" />
-		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="False" />
+		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="True" />
 		<setting name="Playback_Runtime_UseCaseSensitiveParameters" type="1" value="False" />
 		<setting name="Playback_StopOnError" type="1" value="True" />
 		<setting name="Playback_StopOnObjectRecognitionError" type="1" value="False" />

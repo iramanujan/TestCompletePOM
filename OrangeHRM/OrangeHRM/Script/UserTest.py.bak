@@ -3,10 +3,10 @@
 def ValidateSystemUserPage():
   UsersSteps.NavigateToSystemUserPage();
   
-def ValidateSorting(strStatus):
-  UsersSteps.NavigateToSystemUserPage();
-  UsersSteps.VerifySorting(strStatus)
+def ValidateSorting(strSortingOn):
+  #UsersSteps.NavigateToSystemUserPage();
+  UsersSteps.VerifySorting(strSortingOn)
 
 def ValidateFilter(strFilterOn):
-  UsersSteps.NavigateToSystemUserPage();
+  #UsersSteps.NavigateToSystemUserPage();
   UsersSteps.ApplyFilter(strFilterOn);

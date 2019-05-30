@@ -6,7 +6,6 @@ import WebElementHelper
 import Logger
 import Helper
 
-
 def NavigateToSystemUserPage():
   LoginSteps.LoginWithValidInput();
   
@@ -17,10 +16,10 @@ def NavigateToSystemUserPage():
   WebObjUsrMgmt.Click();
   Waiter.Wait(5)
   strPageUrl = BrowserFactry.GetPageUrl()
- # Logger.CheckPoint
+
   Logger.CheckPoint('Navigate To Sytem User Page Successfully: '+strPageUrl) if(aqString.Find(strPageUrl,'viewSystemUsers') != -1)else Log.Error('Navigate To Sytem User Page Failed: ' +strPageUrl)
 
-def VerifySorting(strColumnName):
+def VerifySorting(strColumnName):  
   columnIndex = GetColumnIndexByName(strColumnName);
   WebObjsSort = Users.Sort(columnIndex);
 
@@ -28,15 +27,15 @@ def VerifySorting(strColumnName):
   Waiter.Wait(3)
   strAsc = WebObjsSort.getAttribute('class')
 
-  strFirstRecord = Users.FirstRecord(columnIndex).textContent;
-  strLastRecord = Users.LastRecord(columnIndex).textContent;
+  strFirstRecord = Users.FirstRecord(columnIndex).contentText;
+  strLastRecord = Users.LastRecord(columnIndex).contentText;
     
   WebObjsSort.Click();
   Waiter.Wait(3)
   strDesc = WebObjsSort.getAttribute('class')
 
-  strFirstRecord2 = Users.FirstRecord(columnIndex).textContent;
-  strLastRecord2 = Users.LastRecord(columnIndex).textContent;
+  strFirstRecord2 = Users.FirstRecord(columnIndex).contentText    #textContent;
+  strLastRecord2 = Users.LastRecord(columnIndex).contentText     #textContent;
   
   Log.Message("Order By: {"+strColumnName+" "+strAsc+"} First Value: {"+strFirstRecord+"}, Last Value: {"+strLastRecord+"}")
   Log.Message("Order By: {"+strColumnName+" "+strDesc+"} First Value: {"+strFirstRecord2+"}, Last Value: {"+strLastRecord2+"}")
@@ -49,7 +48,7 @@ def GetColumnIndexByName(strColumnName):
   count = BuiltIn.VarArrayHighBound(WebObjsUserWebTable,1);
   if (count > -1):
     for index in range (0,count+1):
-      if(aqString.Trim(WebObjsUserWebTable[index].contentText) == strColumnName):
+      if(aqString.Trim(WebObjsUserWebTable[index].innerText) == strColumnName):
         Log.Message("Index Number of Column {"+strColumnName +"} is "+str(index+2))
         return index+2;
         
@@ -58,7 +57,7 @@ def GetRowCount(strColumnName):
   WebObjsRowCount = Users.RowCount(columnIndex);
   return len(WebObjsRowCount);
         
-def ApplyFilter(strFilterOn):
+def ApplyFilter(strFilterOn):  
   if(strFilterOn == 'Username'):
     lstColUsername = GetRowData(strFilterOn)
     strFilterValue = Helper.SelectRandomValueFromList(lstColUsername);
