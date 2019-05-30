@@ -56,7 +56,6 @@ def LaunchFirefox():
   #Maximize Browser    
   Sys.Browser().BrowserWindow(0).Maximize()
   
-      
 def LaunchIE():
   TestBrowser = ObjBrowserProperties.GetTestBrowser();
   Browsers.Item[TestBrowser].Run(AppUrl);

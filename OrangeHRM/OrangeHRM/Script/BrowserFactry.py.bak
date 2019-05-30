@@ -28,7 +28,7 @@ def InitBrowser():
   elif(TestBrowser == "chrome"):
     BrowserFactry.LaunchChrome();
   elif(TestBrowser == "firefox"):
-    BrowserFactry.LaunchChrome();
+    BrowserFactry.LaunchFirefox();
   else:
     Log.Message("No Test Browser Found...");
     Runner.Stop();

@@ -23,11 +23,11 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="43615.6714177662"/>
+				<Prp name="datetime" type="D" value="43615.7060494676"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{B3AC00F6-6407-490A-BEC5-23A4B5A0DFC2}"/>
+				<Prp name="key" type="S" value="{1A9A1531-27F0-4402-A85C-07D6BEF5FEF6}"/>
 				<Prp name="nameofroot" type="S" value="OrangeHRM"/>
-				<Prp name="relpath" type="S" value="30-05-2019_16_06_50_495\Description.tcLog"/>
+				<Prp name="relpath" type="S" value="30-05-2019_16_56_42_675\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 		</Node>

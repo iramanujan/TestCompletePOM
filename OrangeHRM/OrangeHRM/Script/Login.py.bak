@@ -2,31 +2,31 @@
 ObjectRepository = {
                     "UserName": 
                                 {
-                                  "FindBy"       :   "xpath",
+                                  "FindBy"       :   "cssSelector",
                                   "Value"         :   "#txtUsername",
                                   "All"              :   False
                                 },
 
                     "Password": 
                                 {
-                                  "FindBy"       :   "xpath",
+                                  "FindBy"       :   "cssSelector",
                                   "Value"         :   "#txtPassword",
                                   "All"              :   False
                                 },
                     "Login": 
                                 {
-                                  "FindBy"       :   "xpath",
+                                  "FindBy"       :   "cssSelector",
                                   "Value"         :   "#btnLogin",
                                   "All"              :   False
                                 },
                     "Welcome": 
                                 {
-                                  "FindBy"       :   "xpath",
+                                  "FindBy"       :   "cssSelector",
                                   "Value"         :   "#welcome",
                                   "All"              :   False
                                 },   
                     "ErrMsg":   {
-                                  "FindBy"                          :     "xpath",
+                                  "FindBy"                          :     "cssSelector",
                                   "Value"                             :    "#spanMessage",
                                   "All"                                  :     False,
                                   "UserEmpty"                   :     "Username cannot be empty",

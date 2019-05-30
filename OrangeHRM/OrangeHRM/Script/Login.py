@@ -80,6 +80,5 @@ def GetLoginUserName():
   WebObject.focus
   return WebObject
 
-  
 def GetValueFromOR(FirstLevelKey, SecoundLevelKey):
   return ObjectRepository[FirstLevelKey][SecoundLevelKey];

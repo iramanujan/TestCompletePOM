@@ -1,3 +1,1 @@
-﻿def Test():
-  Path = Project.Path+"TempStore\TestBrowser.txt"
-  Log.Message(Path)
+﻿
