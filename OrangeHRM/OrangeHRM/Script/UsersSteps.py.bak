@@ -48,7 +48,7 @@ def GetColumnIndexByName(strColumnName):
   count = BuiltIn.VarArrayHighBound(WebObjsUserWebTable,1);
   if (count > -1):
     for index in range (0,count+1):
-      if(aqString.Trim(WebObjsUserWebTable[index].contentText) == strColumnName):
+      if(aqString.Trim(WebObjsUserWebTable[index].innerText) == strColumnName):
         Log.Message("Index Number of Column {"+strColumnName +"} is "+str(index+2))
         return index+2;
         

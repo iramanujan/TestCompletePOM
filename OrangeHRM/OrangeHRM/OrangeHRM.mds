@@ -122,7 +122,7 @@
 					<DefValue IntValue="2" />
 				</Variable>
 				<Variable Name="TimeOutInMin" Type="{88422C25-DDF4-4EA1-B7CC-95779A023F5D}" Local="True" Descr="HTML Element Load Timeout">
-					<DefValue IntValue="1" />
+					<DefValue IntValue="5" />
 				</Variable>
 				<Variable Name="TestBrowserDemo" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True" Descr="IE Browser">
 					<DefValue StrValue="6300680072006F006D006500" />
@@ -140,13 +140,16 @@
 					<DefValue IntValue="0" />
 				</Variable>
 				<Variable Name="TestBrowserList" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="False">
-					<DefValue StrValue="6300680072006F006D0065003B0069006500780070006C006F00720065003B00660069007200650066006F007800" />
+					<DefValue StrValue="6300680072006F006D0065003B0069006500780070006C006F00720065003B00660069007200650066006F0078003B006500640067006500" />
 				</Variable>
 				<Variable Name="TestBrowser" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="False">
 					<DefValue StrValue="6300680072006F006D006500" />
 				</Variable>
 				<Variable Name="DefaultBrowser" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
-					<DefValue StrValue="6300680072006F006D006500" />
+					<DefValue StrValue="6500640067006500" />
+				</Variable>
+				<Variable Name="IsRunOnDefaultBrowser" Type="{D25FDC80-E78F-4209-88B6-6FE2B0771206}" Local="True">
+					<DefValue BoolValue="True" />
 				</Variable>
 			</Items>
 		</data>

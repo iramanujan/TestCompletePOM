@@ -77,7 +77,7 @@ def ApplyFilter(strFilterOn):
   if(strFilterOn == 'Employee Name'):
     WebObjEmployeeName  = Users.EmployeeName()
     lstEmpName = GetRowData(strFilterOn)
-    strFilterValue = Helper.SelectRandomValueFromList(lstEmpName);
+    strFilterValue = Helper.SelectRandomValueFromListWithExclusion(lstEmpName,'');
     Sys.Desktop.Keys(strFilterValue);
     WebObjEmployeeNameList  = Users.EmployeeNameList(strFilterValue)
     WebObjEmployeeNameList.Click();

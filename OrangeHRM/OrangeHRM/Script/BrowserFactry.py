@@ -29,6 +29,8 @@ def InitBrowser():
     BrowserFactry.LaunchChrome();
   elif(TestBrowser == "firefox"):
     BrowserFactry.LaunchFirefox();
+  elif(TestBrowser == 'edge'):
+    BrowserFactry.LaunchEdge()
   else:
     Log.Message("No Test Browser Found...");
     Runner.Stop();
@@ -77,7 +79,30 @@ def LaunchIE():
         Overridelink[0].Click()
   except Exception as e:
     Log.Message(str(e))
-      
+
+def LaunchEdge():
+  TestBrowser = ObjBrowserProperties.GetTestBrowser();
+  Browsers.Item[TestBrowser].Run(AppUrl);
+  #Log Browser version
+  Log.Message("Browser version: " + aqConvert.VarToStr(Browsers.Item[TestBrowser].Version));
+  #Log Browser Description:
+  Log.Message("Browser Description: " + Browsers.Item[TestBrowser].Description);
+  #Maximize Browser   
+  Sys.Browser().BrowserWindow(0).Maximize()
+  #Handle website’s security certificate.
+  try:
+    Overridelink = BrowserFactry.GetPageObject().EvaluateXPath("//a[@id='overridelink']")
+    if(Overridelink is not None):
+      Overridelink[0].Click();
+      aqUtils.Delay(2000)
+    else:
+      Overridelink = BrowserFactry.GetPageObject().EvaluateXPath("//a[@id='overridelink']")
+      if(Overridelink is not None):
+        Overridelink[0].Click()
+  except Exception as e:
+    Log.Message(str(e))
+    
+          
 def RefreshPage():
   GetPageObject().Keys("[F5]")
   return GetPageObject() if(Waiter.WaitTillDocumentReady()) else None;

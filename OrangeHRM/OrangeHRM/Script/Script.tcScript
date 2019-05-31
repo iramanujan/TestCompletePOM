@@ -9,6 +9,7 @@
 				<folder name="User Management">
 					<folder name="Users">
 						<child name="Users" key="{D878F481-EC6A-4E30-B0C4-4984C04C44E8}" path="Users.py" />
+						<child name="AddUser" key="{F7AAA7DE-03F3-4622-BE02-A35E24526437}" path="AddUser.py" />
 					</folder>
 				</folder>
 			</folder>
@@ -21,6 +22,7 @@
 				<folder name="User Management">
 					<folder name="Users">
 						<child name="UsersSteps" key="{6275C243-D43D-41FB-8029-DC9FBB32AD23}" path="UsersSteps.py" />
+						<child name="AddUserSteps" key="{2EA16DE2-3E61-4F12-8B83-34B3907D135E}" path="AddUserSteps.py" />
 					</folder>
 				</folder>
 			</folder>

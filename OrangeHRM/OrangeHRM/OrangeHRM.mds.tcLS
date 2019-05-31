@@ -55,9 +55,15 @@
 					</Node>
 					<Node name="var14">
 						<Node name="value">
-							<Prp name="strvalue" type="H" value="6300680072006F006D006500"/>
+							<Prp name="strvalue" type="H" value="6500640067006500"/>
 						</Node>
 						<Prp name="name" type="S" value="DefaultBrowser"/>
+					</Node>
+					<Node name="var15">
+						<Node name="value">
+							<Prp name="boolvalue" type="B" value="0"/>
+						</Node>
+						<Prp name="name" type="S" value="IsRunOnDefaultBrowser"/>
 					</Node>
 					<Node name="var2">
 						<Node name="value">
@@ -85,7 +91,7 @@
 					</Node>
 					<Node name="var6">
 						<Node name="value">
-							<Prp name="intvalue" type="I" value="1"/>
+							<Prp name="intvalue" type="I" value="5"/>
 						</Node>
 						<Prp name="name" type="S" value="TimeOutInMin"/>
 					</Node>

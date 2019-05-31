@@ -9,7 +9,7 @@ def execCLIComm(Comm):
 	  subprocess.call(Comm)
 	
 def closeAllBrowser():
-	Helper.execCLIComm("cmd /c TASKKILL /F /IM firefox.exe /IM chrome.exe /IM iexplore.exe /IM Excel.exe /T")
+	Helper.execCLIComm("cmd /c TASKKILL /F /IM firefox.exe /IM chrome.exe /IM iexplore.exe /IM MicrosoftEdge.exe /IM MicrosoftEdgeCP.exe /IM MicrosoftEdgeSH.exe /IM Excel.exe /T")
 	#Helper.execCLIComm("cmd /c TASKKILL /F /IM chrome.exe /T")
 	#Helper.execCLIComm("cmd /c TASKKILL /F /IM iexplore.exe /T")
 	#Helper.execCLIComm("cmd /c TASKKILL /F /IM Excel.exe /T")

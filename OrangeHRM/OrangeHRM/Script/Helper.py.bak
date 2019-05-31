@@ -9,12 +9,11 @@ def execCLIComm(Comm):
 	  subprocess.call(Comm)
 	
 def closeAllBrowser():
-	Helper.execCLIComm("cmd /c TASKKILL /F /IM firefox.exe /IM chrome.exe /IM iexplore.exe /IM Excel.exe /T")
+	Helper.execCLIComm("cmd /c TASKKILL /F /IM firefox.exe /IM chrome.exe /IM iexplore.exe /IM MicrosoftEdge.exe /IM Excel.exe /T")
 	#Helper.execCLIComm("cmd /c TASKKILL /F /IM chrome.exe /T")
 	#Helper.execCLIComm("cmd /c TASKKILL /F /IM iexplore.exe /T")
 	#Helper.execCLIComm("cmd /c TASKKILL /F /IM Excel.exe /T")
 
-	  
 def CloseProcess(AppName):
   ObjSys = Sys.WaitProcess(AppName,100)
   if(ObjSys.Exists):
@@ -23,7 +22,6 @@ def CloseProcess(AppName):
       Log.Warning(AppName + " was not closed successfully and will be terminated.")
       ObjSys.Terminate()
 	    
-  
 def GetRandomEmail(Range):
   aqString.ListSeparator = "-"
   min = aqConvert.StrToInt(aqString.GetListItem(Range,0))

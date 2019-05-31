@@ -5,7 +5,7 @@ class BrowserProperties:
     pass;
    
   def GetTestBrowser(self):
-    if(BrowserProperties.TestBrowser == None):
+    if(BrowserProperties.TestBrowser == None or Project.Variables.IsRunOnDefaultBrowser):
       BrowserProperties.TestBrowser = Project.Variables.DefaultBrowser;
       return BrowserProperties.TestBrowser
     else: 
@@ -14,10 +14,13 @@ class BrowserProperties:
       return BrowserProperties.TestBrowser
       
   def SetTestBrowser(self):
-    TestBrowserList = Helper.ConvertStringIntoList(Project.Variables.TestBrowserList,";")
-    Path = Project.Path+"TempStore\TestBrowser.txt"
-    PreviousTestBrowser = Helper.ReadFile(Path)
-    BrowserProperties.TestBrowser = Helper.SelectRandomValueFromListWithExclusion(TestBrowserList,PreviousTestBrowser);
+    if(Project.Variables.IsRunOnDefaultBrowser):
+      BrowserProperties.TestBrowser = Project.Variables.DefaultBrowser;
+    else:
+      TestBrowserList = Helper.ConvertStringIntoList(Project.Variables.TestBrowserList,";")
+      Path = Project.Path+"TempStore\TestBrowser.txt"
+      PreviousTestBrowser = Helper.ReadFile(Path)
+      BrowserProperties.TestBrowser = Helper.SelectRandomValueFromListWithExclusion(TestBrowserList,PreviousTestBrowser);
     
   def GetDefaultTestBrowser():
    return  Project.Variables.DefaultBrowser;

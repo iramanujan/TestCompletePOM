@@ -2,9 +2,7 @@
 import BrowserFactry  
 import Waiter
 
-def LoginWithValidInput():
-  StrUserName = str(Project.Variables.VariableByName['UserName']);
-  StrPassword = str(Project.Variables.VariableByName['Password']);
+def LoginWithValidInput(StrUserName = str(Project.Variables.VariableByName['UserName']),StrPassword = str(Project.Variables.VariableByName['Password'])):
   BrowserFactry.InitBrowser();
   
   WebObjUserName = Login.UserName();
