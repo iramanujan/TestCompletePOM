@@ -9,17 +9,15 @@ ObjBrowserProperties = BrowserProperties()
 def GetPageObject():  
   TestBrowser = ObjBrowserProperties.GetTestBrowser();
   PageObj = Sys.Browser(TestBrowser).Page(PageUrl)
-  return PageObj
+  return PageObj if(PageObj is not None) else Log.Error("Page Object Is None");
   
 def GetPageTitle():
   strPageTitle = GetPageObject().contentDocument.title
-  Log.Message("Page Title: "+ strPageTitle);
-  return strPageTitle
+  return strPageTitle if(strPageTitle is not None) else Log.Error("Page Title Is None");
   
 def GetPageUrl():
   strPageUrl = GetPageObject().contentDocument.URL
-  Log.Message("Page URL "+ strPageUrl);
-  return strPageUrl
+  return strPageUrl if(strPageUrl is not None) else Log.Error("Page URL Is None");
 
 def InitBrowser():
   TestBrowser = ObjBrowserProperties.GetTestBrowser();
@@ -101,8 +99,7 @@ def LaunchEdge():
         Overridelink[0].Click()
   except Exception as e:
     Log.Message(str(e))
-    
-          
+        
 def RefreshPage():
   GetPageObject().Keys("[F5]")
   return GetPageObject() if(Waiter.WaitTillDocumentReady()) else None;

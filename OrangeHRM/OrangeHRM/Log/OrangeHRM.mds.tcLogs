@@ -23,11 +23,20 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="43616.3356663773"/>
+				<Prp name="datetime" type="D" value="43616.4995762731"/>
+				<Prp name="description" type="S" value="ValidateFilter - Status"/>
+				<Prp name="key" type="S" value="{7507F0B0-1E72-4130-B26A-08F7B78B2198}"/>
+				<Prp name="nameofroot" type="S" value="ValidateFilter - Status"/>
+				<Prp name="relpath" type="S" value="31-05-2019_11_59_23_390\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43616.5059110532"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{385FBC63-611B-49A8-93DF-36204CB9362C}"/>
+				<Prp name="key" type="S" value="{3A02803F-0590-42EF-811F-65E445BAEB2C}"/>
 				<Prp name="nameofroot" type="S" value="OrangeHRM"/>
-				<Prp name="relpath" type="S" value="31-05-2019_08_03_21_575\Description.tcLog"/>
+				<Prp name="relpath" type="S" value="31-05-2019_12_08_30_716\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 		</Node>

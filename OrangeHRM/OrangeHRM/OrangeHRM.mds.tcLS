@@ -55,13 +55,13 @@
 					</Node>
 					<Node name="var14">
 						<Node name="value">
-							<Prp name="strvalue" type="H" value="6500640067006500"/>
+							<Prp name="strvalue" type="H" value="660069007200650066006F007800"/>
 						</Node>
 						<Prp name="name" type="S" value="DefaultBrowser"/>
 					</Node>
 					<Node name="var15">
 						<Node name="value">
-							<Prp name="boolvalue" type="B" value="0"/>
+							<Prp name="boolvalue" type="B" value="-1"/>
 						</Node>
 						<Prp name="name" type="S" value="IsRunOnDefaultBrowser"/>
 					</Node>

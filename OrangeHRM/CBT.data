@@ -2,7 +2,122 @@
 <Root Version="1">
 	<Providers>
 		<Provider version="1" Name="CrossBrowserTesting">
-			<groups />
+			<groups>
+				<Group0 Caption="&lt;root&gt;Login" Key="CCAE90E9xF898x422BxA469x0547A8E246DC" Enabled="True">
+					<Hosts>
+						<Host0 Device="Windows 10" Browser="Internet Explorer 11" Resolution="1920x1080" DeviceApi="Win10" BrowserApi="IE11" ResolutionApi="1920x1080" />
+					</Hosts>
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="Login" TestItemKey="CF037F23x673Dx43A8x84FBxAEEC2196AB04" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="30361E38x02EEx447Cx9A6Fx483B3583546D" />
+					</TestItems>
+				</Group0>
+				<Group1 Caption="&lt;root&gt;Login" Key="7AC967FExA934x4B9CxA28Bx4C297A19B8D6" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="Login" TestItemKey="AC07405Bx896Fx466CxBCE5xA15E6997D3F9" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="E01F558Cx47A2x49FBxB056x8F35CE1F8596" />
+					</TestItems>
+				</Group1>
+				<Group2 Caption="&lt;root&gt;OrangeHRM" Key="92D855D4xC1E9x47D3xAEF4x250CD3DC6A16" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="OrangeHRM" TestItemKey="34C92F2Ax58D4x4234x8789x443D3FCCB5F2" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="88B3D290x6309x496Cx9EA7x0AAA15A8D988" />
+					</TestItems>
+				</Group2>
+				<Group3 Caption="&lt;root&gt;SystemUser" Key="F73C3938x03EEx4404xA516x4430A336B648" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="SystemUser" TestItemKey="DC9EA297x18D3x4E82x9252xDB565A7928B2" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="4C8CEE29x7303x4691xBC37xAB80FD3E2C24" />
+					</TestItems>
+				</Group3>
+				<Group4 Caption="&lt;root&gt;ValidateEmptyPasswordErrorMsg" Key="1015EE04x7533x4F66x99FEx3DA06B0E9A16" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateEmptyPasswordErrorMsg" TestItemKey="9206BF66xFC99x4C71x8299x4B3237C8D02E" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="D6983545x077Ax4C74x950AxBFEFDCC4883B" />
+					</TestItems>
+				</Group4>
+				<Group5 Caption="&lt;root&gt;ValidateEmptyUserNameErrorMsg" Key="BD0E150Ax3B28x498BxAD4Cx7AA76881C3CE" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateEmptyUserNameErrorMsg" TestItemKey="90D11053x888Dx40CCxB95Fx1684294BFD28" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="CCDF6359xE553x401Dx84A5x26BE35FC2C65" />
+					</TestItems>
+				</Group5>
+				<Group6 Caption="&lt;root&gt;ValidateFilter - Status" Key="5CB05FE6x53DAx4B9Fx9548x2F2D635744AB" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateFilter - Status" TestItemKey="4614632Bx7AC6x4F8Fx84B9xF2A4FB164A7F" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="83F8E7D5xC419x44EDxAA04x4CFF9E8D2FFA" />
+					</TestItems>
+				</Group6>
+				<Group7 Caption="&lt;root&gt;ValidateFilter - User Role" Key="7829E1D6x7BBDx4AB5xAA5Dx847AC8DF514C" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateFilter - User Role" TestItemKey="C2EA6CE1xA9ABx429Ex9518xAF8F279FC038" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="A165E812x302Dx4E53x9BF7x9FD1CE2F76F4" />
+					</TestItems>
+				</Group7>
+				<Group8 Caption="&lt;root&gt;ValidateFilter - Username" Key="B5B23999x0B97x4449x8B86xCC53B668F555" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateFilter - Username" TestItemKey="DCA427B1x16ADx4E64xAD22xEB02911ACFAD" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="3B4B8881x7E53x4164xA00Cx2F3F6A54829C" />
+					</TestItems>
+				</Group8>
+				<Group9 Caption="&lt;root&gt;ValidateFilter-Employee Name" Key="BBECB56Ex32AFx4FD4x916Fx70F7B587D799" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateFilter-Employee Name" TestItemKey="E4C5BCC0xFDC8x4062xAED1x5AF3728872D2" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="76678B14xD2C4x4375x82D7x7D739BF6AA3D" />
+					</TestItems>
+				</Group9>
+				<Group10 Caption="&lt;root&gt;ValidateInvalidCredentialsErrorMsg" Key="07E5293Ex70A0x4A66xBCD7x59ED2916823E" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateInvalidCredentialsErrorMsg" TestItemKey="460274DDx5988x43DFxAE81x6875A0446E6E" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="79210F0CxD5D2x4A40xA4A1xEDA96F20ECE1" />
+					</TestItems>
+				</Group10>
+				<Group11 Caption="&lt;root&gt;ValidateSorting - EmployeeName" Key="53EC41DFx6B86x4C14x8337xD0A1CD9EF591" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateSorting - EmployeeName" TestItemKey="DB15C632x6A28x471FxA59AxD570B2DEA89B" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="048709D0xB352x4614xA70FxE6A3BA878B79" />
+					</TestItems>
+				</Group11>
+				<Group12 Caption="&lt;root&gt;ValidateSorting - Status" Key="B5134172x679Cx45C3x810BxB02A27D691D7" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateSorting - Status" TestItemKey="A3641B01xB7DAx492Dx9CA4x0351DEB182F7" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="DDCDA913xA715x4D21x8A29xCE723A8A46A7" />
+					</TestItems>
+				</Group12>
+				<Group13 Caption="&lt;root&gt;ValidateSorting - Username" Key="DBE5C257x0F93x4E35x86CFx96937CAEDF9F" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateSorting - Username" TestItemKey="FB6BC1FCxA1D5x40C5xAAA5x73C926A46C3D" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="5ACEAEE7xCCE4x4C23x92FFx49C864DF22DB" />
+					</TestItems>
+				</Group13>
+				<Group14 Caption="&lt;root&gt;ValidateSorting - UserRole" Key="ECFDF1C7xB183x49BAxA290xE8239E2AC76D" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateSorting - UserRole" TestItemKey="56BF5AA4x567Ex437Bx8316x6F5F5277CF8F" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="D0D1CDFFx9578x4295xB235x313F3F2BC5E1" />
+					</TestItems>
+				</Group14>
+				<Group15 Caption="&lt;root&gt;ValidateSystemUserPage" Key="E380C920x868Fx448CxBA88xF1FAC8BA043D" Enabled="True">
+					<Hosts />
+					<Tests />
+					<TestItems>
+						<TestItem0 Name="ValidateSystemUserPage" TestItemKey="AD5A0FF6x08D3x4DF3x8955x6B55BE9E319B" Project="90E43FDAxD93Bx4761x8135xBD6F50520367" Key="0D3A2112x4114x4125x9B64x1DFB8013F794" />
+					</TestItems>
+				</Group15>
+			</groups>
 			<tunnels />
 		</Provider>
 	</Providers>

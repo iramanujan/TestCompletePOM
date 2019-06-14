@@ -146,7 +146,7 @@
 					<DefValue StrValue="6300680072006F006D006500" />
 				</Variable>
 				<Variable Name="DefaultBrowser" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
-					<DefValue StrValue="6500640067006500" />
+					<DefValue StrValue="660069007200650066006F007800" />
 				</Variable>
 				<Variable Name="IsRunOnDefaultBrowser" Type="{D25FDC80-E78F-4209-88B6-6FE2B0771206}" Local="True">
 					<DefValue BoolValue="True" />

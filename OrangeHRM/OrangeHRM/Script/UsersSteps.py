@@ -117,8 +117,11 @@ def GetRowData(strColumnName):
     
 def VerifyFilter(strFilterOn,strFilterValue):
   lstRowValues = GetRowData(strFilterOn)
-  for (index, value) in enumerate(lstRowValues):
-    if(value != strFilterValue):
-      Log.Error("Validate Filter For Condition {Where "+strFilterOn+" = "+strFilterValue+"} is Fail at Row Number {"+str(index+1)+"}. Actual Value: {"+value+"} Expected Value: {"+strFilterValue+"}");
-      return;
-  Logger.CheckPoint("Validate Filter For Condition {Where "+strFilterOn+" = "+strFilterValue+"} is Pass. Actual Value: {"+value+"} Expected Value: {"+strFilterValue+"}");
+  if(lstRowValues is None or len(lstRowValues) == 0):
+    Log.Message("No Record Found  For Condition {Where "+strFilterOn+" = "+strFilterValue+"}")
+  else:
+    for (index, value) in enumerate(lstRowValues):
+      if(value != strFilterValue):
+        Log.Error("Validate Filter For Condition {Where "+strFilterOn+" = "+strFilterValue+"} is Fail at Row Number {"+str(index+1)+"}. Actual Value: {"+value+"} Expected Value: {"+strFilterValue+"}");
+        return;
+    Logger.CheckPoint("Validate Filter For Condition {Where "+strFilterOn+" = "+strFilterValue+"} is Pass. Actual Value: {"+value+"} Expected Value: {"+strFilterValue+"}");

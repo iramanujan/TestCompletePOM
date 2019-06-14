@@ -20,7 +20,35 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="folders"/>
-		<Node name="logs"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43616.5236098727"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{BF7082F2-482A-4357-82CF-0722AA39413D}"/>
+				<Prp name="nameofroot" type="S" value="CrossBrowserTesting Log"/>
+				<Prp name="relpath" type="S" value="31-05-2019_12_33_59_893\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43616.5274035648"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{91804BC6-9165-43CD-ADC6-4FA329421B70}"/>
+				<Prp name="nameofroot" type="S" value="CrossBrowserTesting Log"/>
+				<Prp name="relpath" type="S" value="31-05-2019_12_39_27_668\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="43616.5282046759"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{97FA4DB7-DE2A-4ABD-A739-F51BB41243A9}"/>
+				<Prp name="nameofroot" type="S" value="CrossBrowserTesting Log"/>
+				<Prp name="relpath" type="S" value="31-05-2019_12_40_36_884\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+		</Node>
 		<Prp name="signature" type="S" value="{8B430378-DAB7-4DFD-950E-396FD32C9FC2}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>
